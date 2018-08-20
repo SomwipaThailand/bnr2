@@ -1,0 +1,27 @@
+
+.view {
+    // background: url("/../assets/img/bg-underWater.jpg")no-repeat center center;
+    background: url("http://water.rid.go.th/hwm/wmoc/tcmc/assets/img/bg-underWater.jpg")no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+}
+
+.ui-accordion {
+    width: 1120px !important;
+}
+
+.custombar2 .ui-scrollpanel-wrapper {
+    border-right: 9px solid #757575;
+    border-bottom: 9px solid #757575;
+}
+    
+.custombar2 .ui-scrollpanel-bar {
+    background-color: #68C77D;
+    border-radius: 0;
+    opacity: 1;
+    transition: background-color .3s;
+}
+    
+.custombar2:hover .ui-scrollpanel-bar {
+    background-color: #46A55A;
+}

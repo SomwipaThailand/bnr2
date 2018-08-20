@@ -1,0 +1,29 @@
+
+
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: #4285F4;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+}
+
+.box {
+    background-color: #0084AA;
+    padding: 10px;
+    border: 5px solid #AAE8DB;
+    margin: 0;
+}
+
+.view {
+    // background: url("/../assets/img/bg-underWater.jpg")no-repeat center center;
+    background: url("http://water.rid.go.th/hwm/wmoc/tcmc/assets/img/bg-underWater.jpg")no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
