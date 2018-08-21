@@ -1,26 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { Commands } from '../../domain/commands';
+import { AlertService } from '../../services/alertService';
 
 @Component({
   selector: 'app-alert',
   templateUrl: './alert.component.html',
-  styleUrls: ['./alert.component.scss']
+  styleUrls: ['./alert.component.scss'],
+  providers: [AlertService]
 })
 export class AlertComponent implements OnInit {
 
+  data: Commands[];
 
-  selectedCar3: any;
+  constructor(private alertService: AlertService) { }
 
-  constructor() { }
-
-  ngOnInit() { }
-
-
-  onRowSelect(event) {
-    // this.messageService.add({ severity: 'info', summary: 'Car Selected', detail: 'Vin: ' + event.data.vin });
-  }
-
-  onRowUnselect(event) {
-    // this.messageService.add({ severity: 'info', summary: 'Car Unselected', detail: 'Vin: ' + event.data.vin });
-  }
+  ngOnInit() {
+    this.alertService.getData().then(res => {
+      this.data = res.reverse();
+    });
+   }
 
 }

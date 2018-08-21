@@ -17,49 +17,16 @@
                     <div class="ui-g-12 ui-md-12 ui-lg-12">
                         <table class="table table-hover">
                             <tbody>
-                                <tr>
+                                <tr *ngFor="let item of data">
                                     <th scope="row">
-                                        <a href="assets/crisis-alert/crisis7.pdf" target="_blank"> ประกาศศูนย์เฉพาะกิจชั่วคราวในภาวะวิกฤติ เรื่อง สถานการณ์น้ำเนื่องจากผลกระทบพายุเบบินคา
-                                            ฉบับที่ 7/2561</a>
-                                        <span class="badge red">New</span>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/crisis-alert/crisis6.pdf" target="_blank"> ประกาศศูนย์เฉพาะกิจชั่วคราวในภาวะวิกฤติ เรื่อง สถานการณ์น้ำเนื่องจากผลกระทบจากพายุเบบินคา
-                                            ฉบับที่ 6/2561</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/crisis-alert/crisis5.pdf" target="_blank"> ประกาศศูนย์เฉพาะกิจชั่วคราวในภาวะวิกฤติ เรื่อง สถานการณ์น้ำ ฉบับที่ 5/2561</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/crisis-alert/crisis4.jpg" target="_blank"> ประกาศศูนย์เฉพาะกิจชั่วคราวในภาวะวิกฤติ เรื่อง สถานการณ์แม่น้ำ ฉบับที่ 4/2561</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/crisis-alert/crisis3.jpg" target="_blank">ประกาศศูนย์เฉพาะกิจชั่วคราวในภาวะวิกฤติ เรื่อง สถานการณ์แม่น้ำเพชรบุรี ฉบับที่ 3/2561</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/crisis-alert/crisis2.jpg" target="_blank">ประกาศศูนย์เฉพาะกิจชั่วคราวในภาวะวิกฤติ เรื่อง สถานการณ์แม่น้ำเพชรบุรี ฉบับที่ 2/2561</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/crisis-alert/crisis1.jpg" target="_blank">ประกาศศูนย์เฉพาะกิจชั่วคราวในภาวะวิกฤติ เรื่อง สถานการณ์แม่น้ำเพชรบุรี ฉบับที่ 1/2561</a>
+                                        <a href="assets/crisis-alert/{{item.filename}}" target="_blank">{{item.title}}</a>
+                                        <span class="badge red" *ngIf="item.status == 'N'">New</span>
                                     </th>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

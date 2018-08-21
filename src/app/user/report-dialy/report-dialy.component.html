@@ -18,107 +18,16 @@
                     <div class="ui-g-12 ui-md-12 ui-lg-12">
                         <table class="table table-hover">
                             <tbody>
-                                <tr>
+                                <tr *ngFor="let item of data">
                                     <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-1800-20-08-61.pdf" target="_blank">วันจันทร์ที่ 20 สิงหาคม 2561 (18:00น.)</a>
-                                        <span class="badge red">New</span>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-0700-20-08-61.pdf" target="_blank">วันจันทร์ที่ 20 สิงหาคม 2561 (07:00น.)</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-0700-19-08-61.pdf" target="_blank">วันอาทิตย์ที่ 19 สิงหาคม 2561 (07:00น.)</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-1800-18-08-61.pdf" target="_blank">วันเสาร์ที่ 18 สิงหาคม 2561 (18:00น.)</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-0700-18-08-61.pdf" target="_blank">วันเสาร์ที่ 18 สิงหาคม 2561 (07:00น.)</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-1800-17-08-61.pdf" target="_blank">วันศุกร์ที่ 17 สิงหาคม 2561 (18:00น.)</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-0700-17-08-61.pdf" target="_blank">วันศุกร์ที่ 17 สิงหาคม 2561 (07:00น.)</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-1800-16-08-61.pdf" target="_blank">วันพฤหัสบดีที่ 16 สิงหาคม 2561 (18:00น.)</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-0700-16-08-61.pdf" target="_blank">วันพฤหัสบดีที่ 16 สิงหาคม 2561 (07:00น.)</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-0700-15-08-61.pdf" target="_blank">วันพุธที่ 15 สิงหาคม 2561 (07:00น.)</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-0700-14-08-61.pdf" target="_blank">วันอังคารที่ 14 สิงหาคม 2561 (07:00น.)</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-1800-12-08-61.pdf" target="_blank">วันอาทิตย์ที่ 12 สิงหาคม 2561 (18:00น.)</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-0700-12-08-61.pdf" target="_blank">วันอาทิตย์ที่ 12 สิงหาคม 2561 (07:00น.)</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-0700-11-08-61.pdf" target="_blank">วันเสาร์ที่ 11 สิงหาคม 2561 (07:00น.)</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-0700-10-08-61.pdf" target="_blank">วันศุกร์ที่ 10 สิงหาคม 2561 (07:00น.)</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-0700-09-08-61.pdf" target="_blank">วันพฤหัสบดีที่ 9 สิงหาคม 2561 (07:00น.)</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-0700-08-08-61.pdf" target="_blank">วันพุธที่ 8 สิงหาคม 2561 (07:00น.)</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-0700-07-08-61.pdf" target="_blank">วันอังคารที่ 7 สิงหาคม 2561 (07:00น.)</a>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a href="assets/report-dialry/report-dialry-0700-06-08-61.pdf" target="_blank">วันจันทร์ที่ 6 สิงหาคม 2561 (07:00น.)</a>
+                                        <a href="assets/report-dialry/{{item.filename}}" target="_blank">{{item.title}}</a>
+                                        <span class="badge red" *ngIf="item.status == 'N'">New</span>
                                     </th>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
