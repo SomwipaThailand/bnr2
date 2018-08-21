@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Commands } from '../domain/commands';
+import { Alert } from '../domain/alert';
 
 @Injectable()
 export class AlertService {
@@ -10,7 +10,7 @@ export class AlertService {
     getData() {
         return this.http.get<any>('assets/data/alert.json')
             .toPromise()
-            .then(res => <Commands[]> res.data)
+            .then(res => <Alert[]> res.data)
             .then(data => data);
     }
 }

@@ -20,7 +20,7 @@
                             <tbody>
                                 <tr *ngFor="let item of data">
                                     <th scope="row">
-                                        <a href="assets/report-dialry/{{item.filename}}" target="_blank">{{item.title}}</a>
+                                        <a href="assets/report-dialry/{{item.fileName}}" target="_blank">{{item.title}}</a>
                                         <span class="badge red" *ngIf="item.status == 'N'">New</span>
                                     </th>
                                 </tr>

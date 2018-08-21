@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Commands } from '../../domain/commands';
+import { Alert } from '../../domain/alert';
 import { AlertService } from '../../services/alertService';
 
 @Component({
@@ -10,13 +10,14 @@ import { AlertService } from '../../services/alertService';
 })
 export class AlertComponent implements OnInit {
 
-  data: Commands[];
+  data: Alert[];
 
   constructor(private alertService: AlertService) { }
 
   ngOnInit() {
     this.alertService.getData().then(res => {
       this.data = res.reverse();
+      console.log(this.data);
     });
    }
 
