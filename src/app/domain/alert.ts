@@ -1,4 +1,4 @@
-export interface Commands {
+export interface Alert {
     id?;
     title?;
     fileName?;
