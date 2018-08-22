@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChildren, QueryList, ElementRef } from '@angular/core';
 import { Commands } from '../../domain/commands';
 import { ReportdialyService } from '../../services/reportdialyService';
 
@@ -9,7 +9,7 @@ import { ReportdialyService } from '../../services/reportdialyService';
   providers: [ReportdialyService]
 })
 export class ReportDialyComponent implements OnInit {
-
+  
   data: Commands[];
 
   constructor(private reportdialyService: ReportdialyService) { }
