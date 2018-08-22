@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-
+import { FormBuilder } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
@@ -19,6 +19,7 @@ import { StructureComponent } from './user/structure/structure.component';
 
 import { AccordionModule } from 'primeng/accordion';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
     AlertComponent,
     HomeFirstComponent,
     ReportDialyComponent,
-    StructureComponent
+    StructureComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,7 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
     ScrollPanelModule,
     RouterModule.forRoot(appRoutes, { useHash: true  })
   ],
-  providers: [],
+  providers: [FormBuilder],
   bootstrap: [AppComponent],
   schemas: [ NO_ERRORS_SCHEMA ]
 })

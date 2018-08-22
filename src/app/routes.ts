@@ -4,6 +4,7 @@ import { AlertComponent } from './user/alert/alert.component';
 import { HomeFirstComponent } from './user/home-first/home-first.component';
 import { ReportDialyComponent } from './user/report-dialy/report-dialy.component';
 import { StructureComponent } from './user/structure/structure.component';
+import { LoginComponent } from './login/login.component';
 
 export const appRoutes: Routes = [
     {
@@ -14,5 +15,8 @@ export const appRoutes: Routes = [
             { path: 'alert', component: AlertComponent },
             { path: 'reportdialy', component: ReportDialyComponent },
             { path: 'structure', component: StructureComponent }
-        ] }
+        ] },
+        {
+            path: 'to-login',
+            component: LoginComponent }
 ];
