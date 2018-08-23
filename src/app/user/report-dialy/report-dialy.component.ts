@@ -9,7 +9,7 @@ import { ReportdialyService } from '../../services/reportdialyService';
   providers: [ReportdialyService]
 })
 export class ReportDialyComponent implements OnInit {
-  
+
   data: Commands[];
 
   constructor(private reportdialyService: ReportdialyService) { }
