@@ -36,6 +36,9 @@
         {"id": 34,"title": "วันเสาร์ที่ 1 กันยายน 2561 (07:00น.)", "fileName": "report-dialry-0700-01-09-61.pdf", "status": "O"},
         {"id": 35,"title": "วันเสาร์ที่ 1 กันยายน 2561 (18:00น.)", "fileName": "report-dialry-1800-01-09-61.pdf", "status": "O"},
         {"id": 36,"title": "วันอาทิตย์ที่ 2 กันยายน 2561 (07:00น.)", "fileName": "report-dialry-0700-02-09-61.pdf", "status": "O"},
-        {"id": 37,"title": "วันจันทร์ที่ 3 กันยายน 2561 (07:00น.)", "fileName": "report-dialry-0700-03-09-61.pdf", "status": "N"}
+        {"id": 37,"title": "วันจันทร์ที่ 3 กันยายน 2561 (07:00น.)", "fileName": "report-dialry-0700-03-09-61.pdf", "status": "O"},
+        {"id": 38,"title": "วันอังคารที่ 4 กันยายน 2561 (07:00น.)", "fileName": "report-dialry-0700-04-09-61.pdf", "status": "O"},
+        {"id": 39,"title": "วันพุธที่ 5 กันยายน 2561 (07:00น.)", "fileName": "report-dialry-0700-05-09-61.pdf", "status": "O"},
+        {"id": 40,"title": "วันพฤหัสบดีที่ 6 กันยายน 2561 (07:00น.)", "fileName": "report-dialry-0700-06-09-61.pdf", "status": "N"}
     ]
 }
