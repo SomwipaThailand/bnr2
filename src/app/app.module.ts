@@ -13,13 +13,17 @@ import { appRoutes } from './routes';
 
 import { HomeUserComponent } from './user/home-user/home-user.component';
 import { AlertComponent } from './user/alert/alert.component';
+import { ButtonModule } from 'primeng/button';
 import { HomeFirstComponent } from './user/home-first/home-first.component';
 import { ReportDialyComponent } from './user/report-dialy/report-dialy.component';
 import { StructureComponent } from './user/structure/structure.component';
 
 import { AccordionModule } from 'primeng/accordion';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
+import { SidebarModule } from 'primeng/sidebar';
 import { LoginComponent } from './login/login.component';
+import { DashBoardComponent } from './admin/dash-board/dash-board.component';
+import { MainAdminComponent } from './admin/main-admin/main-admin.component';
 
 @NgModule({
   declarations: [
@@ -29,13 +33,17 @@ import { LoginComponent } from './login/login.component';
     HomeFirstComponent,
     ReportDialyComponent,
     StructureComponent,
-    LoginComponent
+    LoginComponent,
+    DashBoardComponent,
+    MainAdminComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     FormsModule,
+    ButtonModule,
+    SidebarModule,
     HttpClientModule,
     AccordionModule,
     ScrollPanelModule,
